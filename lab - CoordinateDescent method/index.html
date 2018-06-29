@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Исследование операций. Лаб. 2</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="script.js"></script>
+    <style>
+        div#container {
+            min-width: 310px;
+            height: 400px;
+            margin: 0 auto
+        }
+    </style>
+</head>
+<body>
+<h2>Минимизация функции методом покоординатного спуска</h2>
+<p>Функция f(x) = e^(x)+x</p>
+<button type="button" onclick="GetTheAnswer()">Посчитать</button>
+<button type="button" onclick="Chart()">График</button>
+<br>
+<div id="container"></div>
+</body>
+</html>
