@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: "Open Sans";
+
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1200px;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        table {
+            text-align: center;
+            margin: 0 auto;
+            display: inline-block;
+            border-collapse: collapse;
+            padding: 0 5px  ;
+
+        }
+
+        caption {
+            font-size: 16px;
+            margin: 20px 0 10px;
+        }
+
+        td {
+            padding: 7px;
+            font-size: 18px;
+            border: none;
+            border-top: 1px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: green;
+            margin: 5px 0;
+            border: 1px solid limegreen;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+
+        span {
+            font-size: 18px;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0 40px;
+            font-size: 18px;
+        }
+
+        .root {
+            margin: 20px 0 0;
+        }
+        .pdf{
+            margin-bottom: 20px;
+        }
+    </style>
+    <style type="text/css" media="print">
+        #printBtn {
+            display: none;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<div class="wrapper">
+    <h1>Решение СЛАУ методом Гаусса</h1>
+    <p>Процес послідовного виключення невідомих називається прямим ходом методу Гауса. Після завершення прямого ходу у
+        нас
+        з'являється можливість обчислити невідому змінну, що знаходиться в останньому рівнянні. З її допомогою з
+        передостаннього рівняння знаходимо наступну невідому змінну і так далі. Процес послідовного знаходження
+        невідомих
+        змінних при русі від останнього рівняння до першого називається зворотним ходом методу Гауса.
+    </p>
+    <div class="pdf">
+        <button id="printBtn" class="button" onclick="print();">Сохранить отчет</button>
+    </div>
+    <script src="Gauss.js"></script>
+
+</div>
+</body>
+</html>
