@@ -8,14 +8,6 @@ while (flag) {
     changeSign();
 }
 
-if (changeCount === 0 || changeCount === 1) {
-    console.log('Знак не менялся');
-} else {
-    console.log(`Кол-во смены знака - ${changeCount - 1}`);
-}
-
-console.log(`Максимальное число отрицательных чисел,идущих подряд - ${maxNegativeCount}`);
-
 function changeSign() {
     let number;
     let n = +prompt("Введите целое число, которое не равно 0", '');
@@ -41,5 +33,24 @@ function changeSign() {
         return false
     }
 }
+
+
+let div_change_count = document.querySelector('.changeCount');
+
+if (changeCount === 0 || changeCount === 1) {
+    div_change_count.innerHTML = '<span>1) Знак не менялся</span>';
+} else {
+    div_change_count.innerHTML = `1) Количество смены знака - <span class="value">${changeCount - 1}</span>`;
+}
+
+let div_MaxNegativeCount = document.querySelector('.maxNegativeCount');
+div_MaxNegativeCount.innerHTML = `2) Максимальное число отрицательных чисел, идущих подряд -
+                                  <span class="value">${maxNegativeCount}</span>`;
+
+document.querySelector('.close').addEventListener('click', function () {
+    location.reload()
+});
+
+
 
 
